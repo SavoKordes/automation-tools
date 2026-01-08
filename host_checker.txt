@@ -1,0 +1,39 @@
+
+Simple Network Connectivity Checker (Python)
+
+Description
+This script checks whether a host is reachable on a given TCP port.
+It uses Python’s built-in socket library to attempt a connection with a user-defined timeout.
+
+How it works
+- The user enters a hostname (e.g. google.com or an IP address).
+- The user enters a port number and a timeout value (in seconds).
+- The script tries to open a TCP connection.
+- Success or failure is printed to the terminal.
+- The process repeats until the user types "done".
+
+Requirements
+- Python 3.x
+- No external libraries required (standard library only)
+
+Usage
+1. Run the script:
+   python network_check.py
+2. Enter a hostname when prompted.
+3. Enter a port number (e.g. 80).
+4. Enter a timeout value in seconds.
+5. Type "done" to exit.
+
+Notes
+- Hostnames must be entered without protocols (use "google.com", not "http://google.com").
+- Port and timeout must be numeric values.
+- Connection failures are expected and handled safely.
+
+Purpose
+This script is meant as a learning exercise for:
+- while loops
+- input validation
+- try/except error handling
+- basic networking with sockets
+```
+
